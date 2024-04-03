@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IRCC Tracker</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IRCC Tracker</title>
+        <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -43,18 +43,18 @@
         button:hover {
             background-color: #0056b3;
         }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>IRCC Tracker Data</h1>
-        <p>Last Updated: {{ data.last_updated }}</p>
-        <p>Tasks: {{ data.tasks }}</p>
-        <p>Status: {{ data.status }}</p>
-        <p>Check Time: {{ data.button_click_time }}</p>
-        <form action="/run-script" method="post">
-            <button type="submit">Update</button>
-        </form>
-    </div>
-</body>
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>IRCC Tracker Data</h1>
+            <p>Last Updated: {{ data.last_updated }}</p>
+            <p>Tasks: {{ data.tasks }}</p>
+            <p>Status: {{ data.status }}</p>
+            <p>Check Time: {{ data.button_click_time }}</p>
+            <form action="/run-script" method="post">
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    </body>
 </html>
